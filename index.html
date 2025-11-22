@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vintage Retro Garage | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-home">
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="logo">Esh Vintage Retro Garage</div>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="products.html">Bikes</a>
+        <a href="cart.html">Cart</a>
+        <a href="payment.html">Payment</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Classic Rides. Timeless Style.</h1>
+          <p>
+            Hand-picked vintage motorcycles restored with love. 
+            Built for riders who crave chrome, leather, and pure analog power.
+          </p>
+          <div class="hero-actions">
+            <a href="products.html" class="btn primary">View Bikes</a>
+            <a href="cart.html" class="btn ghost">Go to Cart</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h2>Featured Bike</h2>
+          <p class="hero-bike-name">Harbor Tracker 1963</p>
+          <p class="hero-bike-price">₹95,000</p>
+          <a
+            href="payment.html?product=Harbor+Tracker+1963&price=95000"
+            class="btn full-width"
+          >
+            Book This Ride
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container features-grid">
+        <div class="feature">
+          <h3>Authentic Classics</h3>
+          <p>Each bike is sourced from trusted collectors and restored with original parts.</p>
+        </div>
+        <div class="feature">
+          <h3>Garage-Level Care</h3>
+          <p>Every machine is tuned, tested, and detailed before it hits the road.</p>
+        </div>
+        <div class="feature">
+          <h3>Flexible Payments</h3>
+          <p>Simple booking process with secure payment options and easy documentation.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Esh Vintage Retro Garage. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
