@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vintage Retro Garage | Bikes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-products">
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="logo">Esh Vintage Retro Garage</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Bikes</a>
+        <a href="cart.html">Cart</a>
+        <a href="payment.html">Payment</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-header">
+      <h1>Available Vintage Rides</h1>
+      <p>Pick your favorite classic. Click <strong>Book Now</strong> to go straight to payment.</p>
+    </section>
+
+    <section class="cards-grid">
+      <!-- Bike 1 -->
+      <article class="card bike-card">
+        <div class="card-header">
+          <h2>Harbor Tracker 1963</h2>
+          <p class="badge">Most Popular</p>
+        </div>
+        <p class="price">₹95,000</p>
+        <p class="desc">
+          Matte navy tank, chrome fenders, and a throaty single-cylinder engine
+          tuned for city cruising.
+        </p>
+        <a
+          href="payment.html?product=Harbor+Tracker+1963&price=95000"
+          class="btn primary full-width"
+        >
+          Book Now
+        </a>
+      </article>
+
+      <!-- Bike 2 -->
+      <article class="card bike-card">
+        <div class="card-header">
+          <h2>Rustic Roadster 1972</h2>
+        </div>
+        <p class="price">₹88,000</p>
+        <p class="desc">
+          Classic upright stance, spoke wheels, and warm bronze accents for lazy
+          Sunday rides.
+        </p>
+        <a
+          href="payment.html?product=Rustic+Roadster+1972&price=88000"
+          class="btn primary full-width"
+        >
+          Book Now
+        </a>
+      </article>
+
+      <!-- Bike 3 -->
+      <article class="card bike-card">
+        <div class="card-header">
+          <h2>Midnight Bullet 1980</h2>
+        </div>
+        <p class="price">₹1,10,000</p>
+        <p class="desc">
+          Blacked-out tank, short exhaust, and a relaxed low-slung seat for
+          night-time highway runs.
+        </p>
+        <a
+          href="payment.html?product=Midnight+Bullet+1980&price=110000"
+          class="btn primary full-width"
+        >
+          Book Now
+        </a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Esh Vintage Retro Garage.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
